@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int sum(int n, int value, ...) //First parametr is number(количество) of arguments
+template < typename T >int sum(int n, T value, ...) //First parametr is number(количество) of arguments
 {
 	int sum = 0;
 	for (int i = 0; i < n; i++)
@@ -11,7 +11,7 @@ int sum(int n, int value, ...) //First parametr is number(количество) of argumen
 	return sum;
 }
 
-int sum2(int value ...)
+template < typename T >int sum2(T value ...)
 {
 	/*
 	int sum2 = 0;
