@@ -21,7 +21,6 @@ template < typename T >int sum2(T value ...)
 		sum2 += (*psum++);
 		
 	} while ((*psum) <= 34);
-	
 	*/
 	int sum2 = 0;
 	int* p_value = &value;

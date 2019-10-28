@@ -21,7 +21,6 @@ void main()
 
 	Exchange2(&a, &b);
 	Printo(a, b);	//cout << a << "\t" << b << endl;
-	cout << "честно говоря ответ я подсмотрел, и не совсем его понял" << endl;
 }
 
 void Exchange(int* a, int* b)
@@ -34,8 +33,13 @@ void Exchange(int* a, int* b)
 */
 void Exchange2(int *a, int *b)
 {
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
+	/*
+	//тут находится копипаста
 	*a ^= *b; // a = 3 - 2 = 1
 	*b ^= *a; // b = 2 + 1 = 3
 	*a ^= *b; // a = 1 ? 3 = 3 - 1 = 2
-	
+	*/
 }
