@@ -35,8 +35,8 @@ void main()
 	cout << "Буфферная смена:" << endl;
 	Exchange(ra, rb);
 	Printo(a, b);	//cout << a << "\t" << b << endl;
-	/*
 
+	/*
 	cout << "Математическая смена:" << endl;
 	Exchange2(&a, &b);
 	Printo(a, b);	//cout << a << "\t" << b << endl;
